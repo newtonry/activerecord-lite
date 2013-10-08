@@ -1,11 +1,11 @@
-# require_relative './associatable'
+require_relative './associatable'
 require_relative './db_connection'
 require_relative './mass_object'
 require_relative './searchable'
 
 class SQLObject < MassObject
   extend Searchable
-
+  extend Associatable
 #  attr_accessor :table_name # might not need this
 
 
